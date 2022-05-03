@@ -26,6 +26,6 @@ Citizen.CreateThread(function()
                 TaskLeaveVehicle(ped,vehicle,0)
                 QBCore.Functions.Notify("You are not allowed to drive this vehicle.", "error")
             end
-		end
 	end
+   end
 end)
