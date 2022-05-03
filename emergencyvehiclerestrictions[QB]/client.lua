@@ -26,15 +26,6 @@ Citizen.CreateThread(function()
                 TaskLeaveVehicle(ped,vehicle,0)
                 QBCore.Functions.Notify("You are not allowed to drive this vehicle.", "error")
             end
-		else
-		
-			if GetVehicleClass( GetVehiclePedIsIn(ped, false ) ) == 18 and GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId()), -1) == PlayerPedId() then
-				if PlayerData.job.name ~= 'police' and PlayerData.job.name ~= 'ambulance' and PlayerData.job.name ~= 'mechanic' then
-					
-					TaskLeaveVehicle(ped,vehicle,0)
-                    QBCore.Functions.Notify("You are not allowed to drive this vehicle.", "error") 
-				end
-			end
 		end
 	end
 end)
